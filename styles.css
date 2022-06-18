@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background-color: #f9f6ee;
+  position: absolute;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.input {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  pointer-events: none;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button {
+  height: 50px;
+  width: 50px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 3px;
+  background-color: #f9f6ee;
+}
+
+button:hover {
+  background-color: #e2dfd2;
+}
+
+button:active {
+  background-color: #edeade;
+}
+
+.operations {
+  background-color: #1b1212;
+  color: white;
+}
+
+.operations:hover {
+  background-color: #343434;
+}
+
+.operations:active {
+  background-color: #28282b;
+}

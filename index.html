@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./images/calculator.png" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <script src="App.js"></script>
+    <div class="main-container">
+      <div class="container">
+        <div class="input-container">
+          <input type="text" id="result" class="input" value="" />
+        </div>
+        <div class="button-container">
+          <button class="operations" onclick="clearData()">C</button>
+          <button class="operations" onclick="percent()">%</button>
+          <button class="operations" onclick="deleteLast()">Del</button>
+          <button class="operations" onclick="divide()">÷</button>
+
+          <button id="7" value="7" onclick="clickNumber(id)">7</button>
+          <button id="8" value="8" onclick="clickNumber(id)">8</button>
+          <button id="9" value="9" onclick="clickNumber(id)">9</button>
+          <button class="operations" onclick="mult()">×</button>
+
+          <button id="4" value="4" onclick="clickNumber(id)">4</button>
+          <button id="5" value="5" onclick="clickNumber(id)">5</button>
+          <button id="6" value="6" onclick="clickNumber(id)">6</button>
+          <button class="operations" onclick="minus()">-</button>
+
+          <button id="1" value="1" onclick="clickNumber(id)">1</button>
+          <button id="2" value="2" onclick="clickNumber(id)">2</button>
+          <button id="3" value="3" onclick="clickNumber(id)">3</button>
+          <button class="operations" onclick="plus()">+</button>
+
+          <button id="00" value="00" onclick="clickDoubleZero(id)">00</button>
+          <button id="0" value="0" onclick="clickZero(id)">0</button>
+          <button onclick="comma()">.</button>
+          <button class="operations" onclick="equal()">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
